@@ -1,3 +1,5 @@
+import search.BinSearch;
+import search.SeqSearch;
 
 public class Main {
 
