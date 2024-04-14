@@ -6,7 +6,6 @@ public class SelectionSort {
 		int position = array.length - 1;
 		
 		while(position > 0) {
-			
 			// Find largest element in range 0 to position
 			int largestElement = array[0];
 			int indexLargestElement = 0;
@@ -16,11 +15,8 @@ public class SelectionSort {
 					indexLargestElement = nextElement;
 				}
 			}
-			
-			// Swap
-			int placeHolder = array[indexLargestElement];
-			array[indexLargestElement] = array[position];
-			array[position] = placeHolder;
+			// Swap		
+			Sort.swap(array, position, indexLargestElement);
 			
 			// Decrement position
 			position--;

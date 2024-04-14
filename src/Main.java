@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 import search.BinSearch;
 import search.SeqSearch;
+import sort.BubbleSort;
 import sort.InsertionSort;
 import sort.SelectionSort;
 
@@ -32,13 +33,15 @@ public class Main {
 		
 		int[] unsortedArray = {5, 1, 8, 3, 9, 2};
 		int[] unsortedArray2 = {5, 1, 8, 3, 9, 2};
+		int[] unsortedArray3 = {5, 1, 8, 3, 9, 2};
 		
 		SelectionSort.sort(unsortedArray);
 		InsertionSort.sort(unsortedArray2);
+		BubbleSort.sort(unsortedArray3);
 		
 		System.out.println(Arrays.toString(unsortedArray));
 		System.out.println(Arrays.toString(unsortedArray2));
-
+		System.out.println(Arrays.toString(unsortedArray3));
 	}
 
 }
